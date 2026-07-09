@@ -1,119 +1,122 @@
-# FlashSOS 隐私政策
+# FlashSOS Privacy Policy
 
-**生效日期：** 2026-07-08  
-**最新更新：** 2026-07-08
-
----
-
-## 一、导言
-
-感谢您使用 **FlashSOS（闪光灯求救信号与摩斯密码工具，以下简称「本应用」）**。我们严格遵守《中华人民共和国个人信息保护法》（PIPL）、GDPR、CCPA 以及 Apple App Store 隐私审核规定。
-
-**核心立场：**
-> **除非您主动授权用于某些可选功能，否则本应用 100% 在本地运行，不会向任何第三方服务器上传您的输入文本、历史记录、节奏录制或地理位置。**
+**Effective Date:** July 8, 2026  
+**Last Updated:** July 8, 2026
 
 ---
 
-## 二、我们「收集 / 不收集」哪些信息
+## I. Introduction
 
-### 2.1 默认不会主动收集的信息（100% 本地）
+Thank you for using **FlashSOS (Flashlight SOS Signal & Morse Code Tool, hereinafter referred to as "the App")**. We strictly comply with the *Personal Information Protection Law of the People's Republic of China* (PIPL), the EU General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA), and Apple App Store privacy review requirements.
 
-以下数据 **仅存储在您本机**，开发者无法访问：
+**Core Principle:**
 
-| 数据类型 | 说明 | 存储位置 | 上传云端？ |
+> *Unless you explicitly grant consent for specific optional features, the App runs **100% locally on your device**. We never upload your input text, message history, recorded rhythms, or location data to any third-party server.*
+
+---
+
+## II. Information We (Do NOT) Collect
+
+### 2.1 Information That Is NEVER Collected — Stored 100% Locally
+
+All data listed below is **stored only on your device**. The developer has no access to it.
+
+| Data Type | Description | Storage Location | Uploaded to the Cloud? |
 | :--- | :--- | :--- | :--- |
-| 摩斯密码输入文本 | SOS / 摩斯模式下您输入的中英文、数字、符号 | 内存（播放时）+ 本机沙盒历史记录 | ❌ 不上传 |
-| 摩斯密码 / SOS 历史记录 | 最近 N 条已发送文本与对应摩斯码 | iOS App 沙盒（`UserDefaults` / `Documents`） | ❌ 不上传 |
-| 自定义预设求救短语 | 用户保存的 HELP、911 之外的自定义短语 | App 沙盒 `UserDefaults` | ❌ 不上传 |
-| 自定义节奏录制 | 手动点击录制的 ON/OFF 节奏 | App 沙盒 `Documents/presets/` | ❌ 不上传 |
-| 应用设置项 | 基准时长、误触保护、屏幕颜色等所有「设置」内容 | App 沙盒 `UserDefaults` | ❌ 不上传 |
-| 闪光灯运行统计 | SOS / 频闪期间的开关次数、运行时长 | 仅内存临时变量，**退出 App 即清空** | ❌ 不上传 |
+| Morse Code Input Text | Any Chinese / English text, numbers, or symbols entered in SOS or Morse mode | In-memory (during playback) + local sandbox history records | ❌ Never |
+| Morse Code / SOS History | Recent N sent messages and their encoded Morse sequences | iOS App sandbox (`UserDefaults` / `Documents`) | ❌ Never |
+| Custom SOS Preset Phrases | User-created custom phrases beyond the built-in HELP / 911 defaults | App sandbox `UserDefaults` | ❌ Never |
+| Custom Recorded Rhythms | ON/OFF rhythm patterns recorded via manual tap | App sandbox `Documents/presets/` | ❌ Never |
+| App Settings | All items on the Settings screen — base unit duration, mis-touch protection, screen color, etc. | App sandbox `UserDefaults` | ❌ Never |
+| Flashlight Runtime Stats | On/off cycles and total duration during SOS / strobe playback | In-memory temporary variables only, **cleared on exit** | ❌ Never |
 
-### 2.2 **可选授权**才会访问的权限（拒绝不影响核心 SOS 功能）
+### 2.2 Permissions Requested ONLY With Your Explicit Consent
 
-只有在您**主动使用闪光灯**时才会弹窗申请；您可随时在 iOS「设置 → FlashSOS」中单独关闭：
+The prompt is shown **only when you actively use the flashlight feature**. Refusing any permission does **not** affect the core SOS emergency function. You may revoke any permission at any time in *iOS Settings → FlashSOS*.
 
-| 功能 | 请求的权限 | 用途说明 | 是否上传？ |
+| Feature | Permission Requested | Exact Purpose | Uploaded? |
 | :--- | :--- | :--- | :--- |
-| **闪光灯 / 亮度调节** | `NSCameraUsageDescription`（iOS 强制：访问闪光灯需声明摄像头权限） | 仅使用 `AVCaptureDevice` **点亮闪光灯 / 调节亮度**，**不会访问摄像头画面、不会拍摄照片或视频、不会开启麦克风录音** | ❌ 不上传 |
+| **Flashlight / Brightness Control** | `NSCameraUsageDescription` (required by iOS — the flash LED is part of the camera module) | Used **exclusively** to power on the torch LED and adjust brightness via `AVCaptureDevice`. **We never access the camera viewfinder, never capture photos or videos, and never activate the microphone for audio recording.** | ❌ Never |
 
-### 2.3 间接获得的信息（仅来自 Apple 官方、匿名）
+### 2.3 Indirect Information Received — Apple-Owned, Fully Anonymous
 
-为改善崩溃率与性能，可能接入 Apple 官方 **MetricKit / App Store Connect 崩溃报告**（iOS 系统级，默认匿名）：
-- 内容：App 崩溃堆栈、运行时长、耗电分布；
-- 形式：**聚合匿名统计**，不含文本输入、历史记录或位置。
+To improve crash-free rates and performance, the App may receive Apple's built-in **MetricKit / App Store Connect Crash Reports** (an OS-level feature, anonymous by default):
+- **Content:** Crash stack traces, session length, battery usage breakdown;
+- **Format:** Aggregated and anonymised statistics only — never contains user-typed text, message history, or location data.
 
-关闭方式：iOS「设置 → 隐私与安全性 → 分析与改进 → 与 App 开发者共享分析」。
+**How to opt out:** iOS *Settings → Privacy & Security → Analytics & Improvements → Share with App Developers*.
 
 ---
 
-## 三、我们如何使用信息
+## III. How We Use Information
 
-| 目的 | 使用的数据 | 说明 |
+| Purpose | Data Used | Notes |
 | :--- | :--- | :--- |
-| **执行 SOS / 摩斯 / 节奏等核心功能** | 输入文本、设置项、节奏录制、闪光灯参数 | **本机沙盒内计算，不联网** |
-| **崩溃与性能优化**（您同意共享系统分析后） | MetricKit 匿名崩溃堆栈 | 仅用于修复 Bug，无个人标识 |
+| **Core features — SOS / Morse Code / Custom Beats** | Input text, settings, recorded rhythms, flashlight parameters | **Processed entirely on-device, no network connection** |
+| **Crash & performance optimization** (only after you opt-in to system analytics) | MetricKit anonymous crash stack traces | Bug fixes only; no personal identifiers |
 
 ---
 
-## 四、信息共享与披露
+## IV. Data Sharing and Disclosure
 
-我们承诺：**不向任何第三方（广告公司、数据分析公司、营销公司等）出售、交易、出借或共享您的个人信息**。
+We pledge: **We do not sell, trade, rent, or share your personal information with any third party — including ad networks, data brokers, analytics companies, or marketing agencies.**
 
-仅在以下情况可能被动提供：
-- 接到法院传票、行政处罚决定或其他有法律效力的司法 / 行政文书；
-- 为了保护 FlashSOS 用户或公众人身安全；
-- Apple App Store 审核合规查询所需。
+Data may be disclosed only in these limited, legally-mandated scenarios:
+- In response to a court summons, administrative penalty decision, or other legally binding judicial or administrative document;
+- When necessary to protect the personal safety of FlashSOS users or the general public;
+- When required for Apple App Store compliance audits.
 
-> 即便出现以上情况，由于本应用默认不采集您的个人信息，我们几乎没有可提供的「个人数据」——这是本应用从设计之初遵循的隐私原则。
-
----
-
-## 五、数据存储与安全
-
-- **存储介质**：所有用户数据存储在 iPhone 本地沙盒，由 iOS 系统 Data Protection（文件级加密）自动保护；
-- **删除方式**：「设置 → 数据 → 清除历史记录」删除本机所有历史、短语、节奏数据；
-- **App 卸载**：直接卸载 FlashSOS 将同时清空沙盒所有用户数据（iOS 系统行为）。重要内容请先在历史记录页手动复制 / 导出。
+> Even in the above scenarios, because the App does not collect personal information by design, there is effectively no "personal data" available to disclose. This is the privacy-first principle FlashSOS was built on.
 
 ---
 
-## 六、您对数据的权利
+## V. Data Storage and Security
 
-根据 PIPL / GDPR / CCPA，您对个人信息享有：
-
-1. **知情权**：通过本文档了解我们如何使用您的数据；
-2. **访问权**：历史记录、节奏、短语均可在 App 内对应页面查看；
-3. **更正权**：您可随时编辑或删除自定义短语、节奏录制、历史记录；
-4. **删除权（被遗忘权）**：
-   - 路径：「设置 → 数据 → 清除历史记录」；
-   - 如需协助处理 MetricKit 匿名数据，请发送邮件至文末联系方式；
-5. **撤回同意权**：摄像头（闪光灯）权限可随时在 iOS「设置 → FlashSOS」单独关闭；
-6. **拒接自动化决策**：本应用**不进行任何基于个人数据的自动化决策**（不画像、不推荐、不投放广告）。
+- **Storage medium:** All user data resides in the iPhone's local sandbox, automatically protected by iOS Data Protection (file-level encryption);
+- **How to delete manually:** *Settings → Data → Clear All History* — permanently erases all on-device history, custom phrases, and recorded rhythms;
+- **App deletion:** Uninstalling FlashSOS automatically wipes all sandbox user data (native iOS behavior). Please manually copy or export any important content from the History screen first.
 
 ---
 
-## 七、儿童隐私
+## VI. Your Rights Over Your Data
 
-本应用并非专门面向 13 周岁以下儿童（GDPR / PIPL 场景下为 14 周岁）设计。我们不会主动收集 13 岁以下儿童的个人信息。由于本应用默认不采集可识别的个人数据，几乎不存在「儿童个人数据被采集」的场景。
+Under PIPL / GDPR / CCPA, you have the following rights over personal information:
 
-如您是家长 / 监护人，认为孩子使用本应用可能产生问题，请通过文末邮箱与我们联系。
-
----
-
-## 八、本政策的更新
-
-当出现以下情况时，我们可能更新本隐私政策：
-1. 新增功能涉及新的权限或数据使用方式；
-2. 法律法规或监管要求变化；
-3. 业务结构发生重大变更（收购、合并等）。
-
-更新后的版本会：
-- 在本文档顶部更新「最新更新日期」；
-- 重大变更（涉及新权限 / 新数据收集）会在 App 启动时弹窗提示您确认；
-- App Store Connect 对应隐私政策 URL 同步更新。
+1. **Right to be informed** — Understand our data practices through this document;
+2. **Right of access** — View all message history, saved rhythms, and custom phrases directly inside the App;
+3. **Right to rectification** — Edit or delete any custom phrase, recorded rhythm, or history entry at any time;
+4. **Right to erasure ("Right to be forgotten"):**
+   - In-App path: *Settings → Data → Clear All History*;
+   - For assistance with MetricKit anonymous data, email the contact at the end of this policy;
+5. **Right to withdraw consent** — Camera (flashlight) permission can be toggled off at any time in *iOS Settings → FlashSOS*;
+6. **Right to opt out of automated decision-making** — The App performs **no automated decision-making based on personal data** (no user profiling, no personalised recommendations, no ad targeting).
 
 ---
 
-## 九、联系方式
+## VII. Children's Privacy
 
-如对本政策有任何疑问、投诉或删除数据请求，请发送邮件至：ss0593@qq.com
+The App is not specifically directed at children under the age of 13 (14 under PIPL and China's juvenile protection regulations). We do not knowingly collect personal information from children under 13. Given that no personally identifiable data is collected by default, the risk of children's personal data being gathered is effectively zero.
+
+If you are a parent or guardian and have concerns, please reach out to the contact email below.
+
+---
+
+## VIII. Updates to This Policy
+
+This privacy policy may be updated when:
+1. New features introduce new permissions or new data-usage patterns;
+2. Laws, regulations, or supervisory requirements change;
+3. A material change occurs to our business structure (acquisition, merger, etc.).
+
+When the policy is updated:
+- The **Last Updated** date at the top of this document will be revised;
+- Material changes (new permissions / new data collection) will be presented as a mandatory in-app consent dialog on next launch;
+- The corresponding Privacy Policy URL in App Store Connect will be updated.
+
+---
+
+## IX. Contact Us
+
+For any questions, complaints, or data-deletion requests regarding this policy, contact:
+
+📧 ss0593@qq.com
