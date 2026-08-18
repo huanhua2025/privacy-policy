@@ -1,75 +1,75 @@
-# DualShot 隐私政策
+# DualShot Privacy Policy
 
-**更新日期：2026年8月3日**
+**Last Updated: August 3, 2026**
 
-感谢您使用 DualShot（以下简称"本应用"）。我们非常重视您的隐私和个人信息保护。本隐私政策旨在向您说明本应用如何处理您的信息，请您在使用前仔细阅读。
+Thank you for using DualShot (referred to as "the App"). We take your privacy and the protection of your personal information very seriously. This Privacy Policy explains how the App handles your information. Please read it carefully before using the App.
 
-## 一、概述
+## 1. Overview
 
-本应用是一款前后双摄拍摄工具，允许您同时使用前置摄像头和后置摄像头拍摄照片和视频，并支持画中画（PiP）合成模式。
+The App is a front-and-rear dual-camera capture tool that allows you to take photos and videos using the front and rear cameras simultaneously, with support for picture-in-picture (PiP) composition mode.
 
-**本应用承诺：不收集、不传输、不出售任何个人信息。所有拍摄、合成、编辑均在您的设备本地完成，数据不会上传至任何服务器。**
+**The App commits to: not collecting, transmitting, or selling any personal information. All capture, composition, and editing are performed locally on your device. No data is uploaded to any server.**
 
-## 二、我们收集的信息
+## 2. Information We Collect
 
-### 1. 我们不收集的信息
+### 2.1 Information We Do Not Collect
 
-- 本应用**不收集**任何个人身份信息（如姓名、手机号、邮箱、地址等）。
-- 本应用**不需要**注册账号或登录。
-- 本应用**不含**广告 SDK、统计 SDK 或第三方跟踪代码。
-- 本应用**不采集**设备标识符（如 IDFA、IMEI）、位置信息、通讯录、浏览器历史等。
+- The App **does not collect** any personally identifiable information (such as name, phone number, email address, home address, etc.).
+- The App **does not require** registration or login.
+- The App **contains no** advertising SDKs, analytics SDKs, or third-party tracking code.
+- The App **does not collect** device identifiers (such as IDFA, IMEI), location information, contacts, browser history, etc.
 
-### 2. 仅在设备本地使用的数据
+### 2.2 Data Used Only on Your Device
 
-以下数据仅保存在您的设备本地，不会上传或共享：
+The following data is stored only locally on your device and is never uploaded or shared:
 
-- **拍摄的照片和视频**：保存在您的系统相册中，完全由您控制。
-- **画中画设置**（位置、尺寸、宽高比、边框样式等）：保存在应用本地存储（UserDefaults），仅用于重启后恢复您的使用偏好。
-- **语言偏好**：保存在本地，用于显示您选择的界面语言。
+- **Captured photos and videos**: Stored in your system photo library and fully controlled by you.
+- **Picture-in-Picture settings** (position, size, aspect ratio, border style, etc.): Stored in the App's local storage (UserDefaults) and used only to restore your preferences after restart.
+- **Language preference**: Stored locally and used to display the interface language of your choice.
 
-## 三、我们申请的系统权限及用途
+## 3. System Permissions We Request and Their Purpose
 
-本应用在您首次使用时，会向您申请以下权限，您可以在系统"设置"中随时关闭或修改：
+When you first use the App, we will request the following permissions. You can disable or modify them at any time in the system "Settings" app:
 
-| 权限 | 用途 | 是否必需 |
-|------|------|----------|
-| 相机 | 同时调用前置和后置摄像头进行双摄拍摄、预览与合拍 | 必需，拒绝后将无法使用核心功能 |
-| 麦克风 | 录制视频时采集音频 | 视频拍摄必需；仅拍摄照片时不需要 |
-| 相册 | 保存拍摄的照片/视频；选择参考图片用于合拍 | 必需，拒绝后将无法保存作品或使用参考图功能 |
+| Permission | Purpose | Required |
+|------------|---------|----------|
+| Camera | Simultaneously use the front and rear cameras for dual-camera capture, preview, and PiP composition | Required; core features will not work if denied |
+| Microphone | Capture audio while recording video | Required for video recording; not needed for photos only |
+| Photo Library | Save captured photos/videos; select reference images for composition | Required; saving your work or using reference images will not be possible if denied |
 
-**说明：**
-- 相机画面仅在拍摄和预览时实时调用，拍摄完成后不会保留在应用内。
-- 从相册选择参考图时，仅在您主动选择后才会读取该张图片。
-- 本应用不会在后台调用摄像头或麦克风。
+**Notes:**
+- The camera is only used in real time during capture and preview. No footage is retained within the App after capture.
+- A reference image is only read when you actively select it from your photo library.
+- The App never accesses the camera or microphone in the background.
 
-## 四、信息的使用方式
+## 4. How We Use Your Information
 
-由于本应用的所有处理均在设备本地完成，我们**不会以任何形式**使用您的信息进行分析、画像或投放广告。
+Because all processing in the App is performed locally on your device, we **do not** use your information in any form for analysis, profiling, or advertising.
 
-## 五、信息的存储
+## 5. Storage of Your Information
 
-- 拍摄的作品存储在**系统相册**中，遵循 iOS 系统的存储与备份规则。
-- 应用设置（画中画参数、语言等）存储在应用沙盒内，卸载应用后会被系统清除。
+- Your captured work is stored in the **system photo library** and follows iOS system storage and backup rules.
+- App settings (picture-in-picture parameters, language, etc.) are stored within the App's sandbox and are cleared when the App is uninstalled.
 
-## 六、信息的共享与转让
+## 6. Sharing and Transfer of Information
 
-- 本应用**不会**向任何第三方共享、出售或出租您的信息。
-- 本应用**不含**任何第三方 SDK，因此不存在第三方获取您信息的通道。
+- The App **does not** share, sell, or rent your information to any third party.
+- The App **contains no third-party SDKs**, so there is no channel through which a third party could access your information.
 
-## 七、数据安全
+## 7. Data Security
 
-本应用的所有数据处理均发生在您的设备本地，不涉及网络传输，从根源上避免了数据在传输过程中被窃取的风险。您的作品和数据的安全由 iOS 系统安全机制保障。
+All data processing in the App takes place locally on your device and does not involve network transmission, which fundamentally avoids the risk of data interception during transfer. The security of your work and data is safeguarded by the iOS system security mechanisms.
 
-## 八、儿童隐私
+## 8. Children's Privacy
 
-本应用不针对 13 岁以下儿童设计，也不收集任何用户的个人信息。
+The App is not designed for children under the age of 13 and does not collect any personal information from users.
 
-## 九、本隐私政策的变更
+## 9. Changes to This Privacy Policy
 
-我们可能会根据法律法规或应用功能的变化适时更新本隐私政策。更新后的政策将在本页面发布，并更新页首的"更新日期"。重大变更时，我们会在应用内显著位置提示您。
+We may update this Privacy Policy from time to time to reflect changes in laws/regulations or App features. The updated policy will be published on this page with the "Last Updated" date revised at the top. In the event of significant changes, we will notify you prominently within the App.
 
-## 十、联系我们
+## 10. Contact Us
 
-如您对本隐私政策有任何疑问、意见或建议，请通过以下方式与我们联系：
+If you have any questions, comments, or suggestions regarding this Privacy Policy, please contact us at:
 
-- 邮箱：ss0593@qq.com
+- Email: ss0593@qq.com
